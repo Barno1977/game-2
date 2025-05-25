@@ -1,0 +1,74 @@
+.main-menu {
+  background-color: #f2efe8;
+  border: 8px solid #d6aa3b;
+  border-radius: 25px;
+  padding: 40px;
+  margin: 50px auto;
+  max-width: 900px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+  font-family: 'Arial Rounded MT Bold', sans-serif;
+}
+
+.main-menu h1 {
+  background-color: #e91e63;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 30px;
+  font-size: 36px;
+  display: inline-block;
+  margin-bottom: 50px;
+}
+
+.game-buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.game-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.game-button img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  margin-bottom: 15px;
+  border-radius: 50%;
+  border: 5px solid white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.game-button button {
+  width: 160px;
+  height: 50px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+}
+
+.game-button:nth-child(1) button {
+  background-color: #13191d; /* Blue */
+}
+
+.game-button:nth-child(2) button {
+  background-color: #9b59b6; /* Purple */
+}
+
+.game-button:nth-child(3) button {
+  background-color: #e91e63; /* Pink */
+}
+
+.game-button button:hover {
+  transform: scale(1.05);
+}

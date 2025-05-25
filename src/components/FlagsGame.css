@@ -1,0 +1,51 @@
+.game-container, .result-container {
+  text-align: center;
+  padding: 30px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.flag-image {
+  width: 200px;
+  height: 120px;
+  margin: 20px 0;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  background-color: #004080;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0066cc;
+}
+
+.back-button {
+  margin-top: 20px;
+  background-color: #888;
+}
+
+.rank {
+  font-size: 20px;
+  margin-top: 10px;
+  color: #004080;
+  font-weight: bold;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}

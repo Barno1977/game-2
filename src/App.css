@@ -1,0 +1,103 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  font-size: 26px;
+  background: linear-gradient(135deg, #d946ef, #8b5cf6);
+  min-height: 100vh;
+}
+
+.App {
+  padding: 40px 20px;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.App.menu {
+  background: linear-gradient(135deg, #d946ef, #8b5cf6);
+}
+
+.App.flags {
+  background: linear-gradient(135deg, #3b82f6, #60a5fa);
+}
+
+.App.capitals {
+  background: linear-gradient(135deg, #9333ea, #c084fc);
+}
+
+.App.space {
+  background: linear-gradient(135deg, #f43f5e, #fb7185);
+}
+
+.title {
+  font-size: 72px;
+  margin-bottom: 50px;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.game-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.game-option {
+  background-color: rgb(254, 254, 254);
+  border-radius: 24px;
+  padding: 80px;
+  width: 250px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.game-option:hover {
+  transform: scale(1.05);
+}
+
+.game-option img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 16px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.2);
+}
+
+button {
+  border: none;
+  padding: 12px 20px;
+  font-size: 32px;
+  font-weight: bold;
+ 
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 100%;
+}
+button.flags {
+  background-color: #3b82f6;
+   color: rgb(255, 255, 255);
+}
+
+button.capitals {
+  background-color: #9333ea;
+   color: rgb(255, 255, 255);
+}
+
+button.space {
+  background-color: #f43f5e;
+   color: rgb(255, 255, 255);
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
