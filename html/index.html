@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Игровой мир</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background:linear-gradient(135deg,#d946ef,#8b5cf6);
+      color: #ffffff;
+    }
+    header {
+      background-color: #0f036a;
+      color: white;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav a {
+      color: rgb(255, 255, 255);
+      margin: 0 10px;
+      text-decoration: none;
+    }
+    .main {
+      padding: 40px;
+      text-align: center;
+    }
+    .main h1 {
+      font-size: 36px;
+      color: #ffffff;
+    }
+    .games {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin-top: 40px;
+    }
+    .game-card {
+      background: rgb(51, 7, 139);
+      padding: 32px;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgb(255, 255, 255);
+      width: 250px;
+    }
+    .game-card h3 {
+      color: #ffffff;
+      padding: 24px;
+      text-align: center;
+      font-size: 36px;
+      
+    
+    }
+    footer {
+      background-color: #000980;
+      color: rgb(255, 255, 255);
+      text-align: center;
+      padding: 20px;
+      margin-top: 60px;
+    }
+    footer a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+    #game-frame {
+      width: 100%;
+      height: 700px;
+      border: none;
+      margin-top: 40px;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo"><strong>GameSite</strong></div>
+    <nav>
+      <a href="index.html">Главная</a>
+      <a href="about.html">О нас</a>
+      <a href="contacts.html">Контакты</a>
+    </nav>
+  </header>
+
+  <div class="main">
+    <h1>Добро пожаловать в мир викторин!</h1>
+    <p>Выбери одну из увлекательных игр и проверь свои знания.</p>
+    <div class="games">
+      <div class="game-card">
+        <h3>Игры</h3>
+        
+        <button onclick="loadGame()">Играть</button>
+      </div>
+    </div>
+
+    <iframe
+  src="dist/index.html"
+  id="game-frame"
+  width="100%"
+  height="800px"
+  style="border: none;"
+></iframe>
+
+  </div>
+
+  <footer>
+    <p>&copy; 2025 GameSite. Все права защищены.</p>
+    <p>
+      <a href="#">Политика конфиденциальности</a> |
+      <a href="#">Условия использования</a>
+    </p>
+  </footer>
+
+  <script>
+    function loadGame() {
+      const iframe = document.getElementById('game-frame');
+      iframe.src = "dist/index.html";
+      iframe.style.display = 'block';
+      window.scrollTo({ top: iframe.offsetTop - 20, behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>

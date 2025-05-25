@@ -1,0 +1,99 @@
+/* Основные стили страницы */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+}
+
+/* Секция с флагами в верхней части страницы */
+.flags-strip {
+    display: flex;
+    overflow-x: auto;
+    background-color: #ffffff;
+    padding: 10px 0;
+    white-space: nowrap;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+.flags-strip img {
+    width: 60px;
+    height: 40px;
+    margin: 0 5px;
+    border-radius: 5px;
+}
+
+/* Стили для заголовка */
+.main-heading {
+    text-align: center;
+    font-size: 48px;
+    margin: 40px 0 20px 0;
+    color: #333333;
+}
+.sub-heading {
+    text-align: center;
+    font-size: 18px;
+    color: #777777;
+    margin-bottom: 40px;
+}
+
+/* Контейнер с блоками игр */
+.game-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+/* Общие стили для блоков игр */
+.game-block {
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+}
+.game-block:hover {
+    transform: scale(1.05);
+}
+
+/* Стили для каждого блока игры */
+.flags-game {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Earths_Continents.svg/1200px-Earths_Continents.svg.png');
+    background-size: cover;
+    background-position: center;
+    background-color: #4A90E2;
+}
+.capitals-game {
+    background-image: url('https://cdn.pixabay.com/photo/2016/10/09/08/55/tower-1721855_1280.jpg');
+    background-size: cover;
+    background-position: center;
+    background-color: #F5A623;
+}
+.space-game {
+    background-image: url('https://cdn.pixabay.com/photo/2014/08/21/14/51/space-423702_1280.jpg');
+    background-size: cover;
+    background-position: center;
+    background-color: #7ED321;
+}
+
+/* Текст для каждого блока игры */
+.game-title {
+    font-size: 40px;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+.game-subtitle {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
